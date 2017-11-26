@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a[3];
+    for(int i = 101;i>100 && i<=999;i++){
+        int temp = i;
+        for(int t = 0; t < 3 ; t++){
+
+            a[t] = temp % 10;
+            temp /= 10;
+        }    
+        if(a[0]*a[0]*a[0]+a[1]*a[1]*a[1]+a[2]*a[2]*a[2]==i)
+                cout << i << endl;
+    }
+
+    return 0;
+}
